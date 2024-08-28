@@ -1,13 +1,17 @@
 public class BasketballPlayer extends Player{
     int countOfGoals;
 
-    @Override
-    public void getInfo() {
+    public BasketballPlayer(String nameOfPlayer, String teamName, int numberPosition,  int countOfGoals) {
+        super(nameOfPlayer, teamName, numberPosition,"Basketbol");
 
+        this.countOfGoals = countOfGoals;
+    }
+    public int getCountOfGoals() {
+        return countOfGoals;
     }
 
-    @Override
-    public String getTeamName() {
-        return "";
+    public void setCountOfGoals(int countOfGoals) {
+        this.countOfGoals = countOfGoals;
     }
+
 }
