@@ -8,5 +8,16 @@ public class Main {
         player1.getInfo();
         VolleyballPlayer player2 = new VolleyballPlayer("Sardor", "Toshkent", 1,  10);
         player2.getInfo();
+        BaseConverter selsiy=new BaseConverter(32,"C");
+        System.out.println("Selsiy: "+selsiy.getTemperature());
+        System.out.println("Fahrenheit: "+selsiy.convertToFahrenheit());
+        System.out.println("Kelvin: "+selsiy.convertToKelvin());
+
+        BaseConverter kel= new BaseConverter(1,"K");
+        System.out.println("Kelvin: "+kel.getTemperature());
+        System.out.println("Fahrenheit: "+kel.convertToFahrenheit());
+        System.out.println("Celsius: "+kel.convertToCelsius());
+        System.out.println("Kelvin: "+kel.convertToKelvin());
+
     }
 }
